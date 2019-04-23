@@ -12,11 +12,11 @@ export default class App extends Component {
 
 
 // import React, { Component } from 'react';
-// import { Alert, Button, StyleSheet, View } from 'react-native';
+// import { Alert, Button, StyleSheet, View, Text } from 'react-native';
 
 // export default class ButtonBasics extends Component {
 //   _onPressButton(){
-//     Alert.alert("yep that's it")
+//     Alert.alert("you pressed the button")
 //   }
 //   render() {
 //     return (
@@ -26,6 +26,7 @@ export default class App extends Component {
 //           onPress={this._onPressButton}
 //           title="Login"
 //           />
+//         <Text>HOPE U APPEAAR KATIKATO</Text>
 //         </View>
 //       </View>
 //     );
@@ -37,6 +38,7 @@ export default class App extends Component {
 //    flex: 1,
 //    justifyContent: 'center',
 //    backgroundColor: '#fff',
+//    alignItems: 'center',
 //   },
 //   login:{
 //     backgroundColor: 'red',
