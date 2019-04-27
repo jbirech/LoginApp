@@ -1,16 +1,19 @@
 import React, {Component} from 'react';
 import { StyleSheet, Text, TextInput, TouchableOpacity, KeyboardAvoidingView, View} from 'react-native';
+import {Actions} from 'react-native-router-flux';
+
 
 class Login extends Component{
-  _onpressButton(){
-    alert("Your login is complete")
-  }
+  signup() {
+		Actions.signup()
+	}
+
   render() {
     return (
       <KeyboardAvoidingView style={styles.container} behavior="padding" enabled>
 
         <Text style={styles.welcome}>ClubMeme</Text>
-        <Text style={styles.description}>Where the fun is...</Text>
+        <Text style={styles.description}>Where fun begins...</Text>
         <TextInput placeholder="Email or Username" style={styles.input}/>
         <TextInput placeholder="Password" 
         secureTextEntry={true}
@@ -18,10 +21,11 @@ class Login extends Component{
         <TouchableOpacity onPress={this._onPressButton} style={styles.button}>
           <Text style={styles.loginButton}>Login</Text>
         </TouchableOpacity>
+        <Form type="SignUp"/>
         <View style={styles.signUpText}>
           <Text style={styles.bottomText}>Don't have an account?</Text>
-          <TouchableOpacity onPress={this._onpressButton}>
-            <Text style={styles.loginText}>Sign Up</Text>
+          <TouchableOpacity onPress={this.signup}>
+            <Text style={styles.loginText}>SignUp</Text>
           </TouchableOpacity>
         </View>
       </KeyboardAvoidingView>

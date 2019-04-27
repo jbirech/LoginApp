@@ -10,7 +10,7 @@ class SignUp extends Component{
         <KeyboardAvoidingView style={styles.container} behavior="padding" enabled>
   
           <Text style={styles.welcome}>ClubMeme</Text>
-          <Text style={styles.description}>Where the fun is...</Text>
+          <Text style={styles.description}>Where fun begins...</Text>
           
           <TextInput 
             placeholder="Email" 
@@ -32,6 +32,7 @@ class SignUp extends Component{
           <TouchableOpacity onPress={this._onPressButton} style={styles.button}>
             <Text style={styles.signUpButton}>SignUp</Text>
           </TouchableOpacity>
+          <Form type="Login"/>
           <View style={styles.signUpText}>
             <Text style={styles.bottomText}>Already have an account?</Text>
             <TouchableOpacity onPress={this._onpressButton}>
